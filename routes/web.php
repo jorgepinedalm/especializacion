@@ -19,4 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/residentes', 'ResidenteController@index')->name('residente.index');
-Route::get('/residentes/new', 'ResidenteController@new')->name('residente.new');
+Route::get('/residentes/new', 'ResidenteController@newResidente')->name('residente.new');
+Route::post('/residentes/save', 'ResidenteController@saveResidente')->name('residente.save');
+Route::get('/residentes/edit/{id}', 'ResidenteController@editResidente')->name('residente.edit');
+Route::post('/residentes/update', 'ResidenteController@updateResidente')->name('residente.update');
+Route::post('/residentes/delete', 'ResidenteController@deleteResidente')->name('residente.delete');
