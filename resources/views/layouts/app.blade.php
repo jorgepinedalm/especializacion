@@ -38,6 +38,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('residente.index') }}">{{ __('Residentes') }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('apartamentos.index') }}">{{ __('Apartamentos') }}</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
